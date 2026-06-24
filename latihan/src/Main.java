@@ -2,9 +2,6 @@ import java.util.Scanner;
 
 public class Main {
 
-    /**
-     * @param args
-     */
     public static void main(String[] args) {
 
         Scanner input =
@@ -13,9 +10,12 @@ public class Main {
         Validator validator =
                 new NikValidator();
 
-        ReservasiService service;
-        service = new ReservasiService(
-                validator);
+        ReservasiService service =
+                new ReservasiService(
+                        validator);
+
+        Reservasi reservasi =
+                service;
 
         LayananJadwal jadwal =
                 service;
